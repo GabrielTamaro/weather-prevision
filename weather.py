@@ -62,9 +62,8 @@ for cap in capitais:
             if temp_prev1 != '0' and temp_prev2 != '0':
                 break
         dados = (cap, temp, temp_prev1, temp_prev2)
-        cria_csv(cabecalho, dados, csv_arquivo)
         #print(cabecalho, dados)
     # caso tenha retornado erro, deixar as temperaturas tudo com zero
     else:
         dados = (cap, 0, 0, 0)
-        cria_csv(cabecalho, dados, csv_arquivo)
+    cria_csv(cabecalho, dados, csv_arquivo)
